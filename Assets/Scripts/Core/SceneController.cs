@@ -20,7 +20,7 @@ public class SceneController : MonoBehaviour {
 		gameLevelNum++;
 	}
 	private void LoadLevel( int indexNum )
-	{
+	{ 
 		LoadLevel( levelNames[indexNum] );
 	}
 	public void ResetGame()
