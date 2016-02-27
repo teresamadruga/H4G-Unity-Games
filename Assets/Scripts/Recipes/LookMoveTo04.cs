@@ -3,7 +3,7 @@ using System.Collections;
 
 public class LookMoveTo04 : MonoBehaviour {
 	public Camera camera;
-	public GameObject ground;
+	public GameObject[] grounds;
 
 	void Update () {
 //		Ray ray;
@@ -22,17 +22,24 @@ public class LookMoveTo04 : MonoBehaviour {
 //		}
 
 		Ray ray;
+//		RaycastHit hit;
 		RaycastHit[] hits;
 		GameObject hitObject;
 		
 		Debug.DrawRay (camera.transform.position, camera.transform.rotation * Vector3.forward * 100.0f);
 		
 		ray = new Ray (camera.transform.position, camera.transform.rotation * Vector3.forward);
+
+//		hits=Physics.Raycast(ray);
+//		hitObject=hit.collider.gameObject;
+//		if (hitObject == grounds[0] || hitObject == grounds[1]) {
+//			transform.position = hit.point;
+//		}
 		hits = Physics.RaycastAll (ray);
 		for (int i=0; i < hits.Length; i++) {
 			RaycastHit hit = hits [i];
 			hitObject = hit.collider.gameObject;
-			if (hitObject == ground) {
+			if (hitObject == grounds[0] || hitObject == grounds[1]) {
 				Debug.Log ("Hit (x,y,z): " + hit.point.ToString("F2"));
 				transform.position = hit.point;
 			}
