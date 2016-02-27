@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+
 public class fpcscript : MonoBehaviour {
 
     Vector3 posinicial;
@@ -55,7 +56,7 @@ public class fpcscript : MonoBehaviour {
         bueno.enabled = true;
         yield return new WaitForSeconds(2);
         //CONDICION DE SALIR DE ESCENA
-        sceneController.GetComponent<SceneController>().LoadLevel("EnterGame");
+        SceneManager.LoadScene("Scenes/Level Selector");
     }
 
     IEnumerator inicio()

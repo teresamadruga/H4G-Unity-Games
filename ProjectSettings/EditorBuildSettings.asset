@@ -6,4 +6,32 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MetroStationv3.unity
+    path: Assets/Scenes/EnterScene.unity
+  - enabled: 1
+    path: Assets/Scenes/ChooseType.unity
+  - enabled: 1
+    path: Assets/Scenes/GameSelect.unity
+  - enabled: 1
+    path: Assets/Scenes/HappyFace1.unity
+  - enabled: 1
+    path: Assets/Scenes/Level Selector.unity
+  - enabled: 1
+    path: Assets/Scenes/Level Selector 2.unity
+  - enabled: 1
+    path: Assets/Scenes/MetroStationv4.unity
+  - enabled: 1
+    path: Assets/Scenes/SadFace1.unity
+  - enabled: 1
+    path: Assets/Scenes/Social Network 1.unity
+  - enabled: 1
+    path: Assets/Scenes/Social Network 2.unity
+  - enabled: 1
+    path: Assets/Scenes/Social Network 3.unity
+  - enabled: 1
+    path: Assets/Scenes/Social Network 4.unity
+  - enabled: 1
+    path: Assets/Scenes/Social Network 5.unity
+  - enabled: 1
+    path: Assets/Scenes/Social Network 6.unity
+  - enabled: 1
+    path: Assets/Scenes/Social Network 7.unity
