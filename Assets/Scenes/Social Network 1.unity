@@ -133,7 +133,7 @@ Camera:
   m_GameObject: {fileID: 214070743}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -144,8 +144,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 10.41
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -166,7 +166,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 214070743}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0.41, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -194,12 +194,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 687852250}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7068515, w: -0.707362}
-  m_LocalPosition: {x: 3, y: -3, z: 0}
-  m_LocalScale: {x: 57.410328, y: 44.931858, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2104951854}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
 --- !u!95 &687852252
 Animator:
   serializedVersion: 3
@@ -489,6 +489,7 @@ GameObject:
   - 222: {fileID: 2104951856}
   - 114: {fileID: 2104951855}
   - 114: {fileID: 2104951857}
+  - 114: {fileID: 2104951858}
   m_Layer: 5
   m_Name: Home-Background
   m_TagString: Untagged
@@ -505,8 +506,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0.7068515, w: -0.707362}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
-  m_Children:
-  - {fileID: 687852251}
+  m_Children: []
   m_Father: {fileID: 850817811}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
@@ -570,3 +570,16 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &2104951858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2104951853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1741964061, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
