@@ -13,7 +13,6 @@ public class fpcscript : MonoBehaviour {
     SpriteRenderer bueno;
     SpriteRenderer malo;
     SpriteRenderer busca;
-    public GameObject sceneController;
 
 
     void Start () {
@@ -55,8 +54,8 @@ public class fpcscript : MonoBehaviour {
         bueno.enabled = true;
         yield return new WaitForSeconds(2);
         //CONDICION DE SALIR DE ESCENA
-        sceneController.GetComponent<SceneController>().LoadLevel("EnterGame");
-    }
+		SceneManager.LoadScene("Level Selector 2");    
+	}
 
     IEnumerator inicio()
     {
