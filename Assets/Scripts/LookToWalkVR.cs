@@ -4,9 +4,9 @@ using System.Collections;
 public class LookToWalkVR : MonoBehaviour 
 {
 	private CharacterController charControl;
-	private Clicker click;
-	private bool walking=false;
-	public float speed = 0.6F;
+	private Clicker click = new Clicker();
+	public bool walking=false;
+	public float speed = 0.7F;
 	void Start ()
 	{
 		charControl=GetComponent<CharacterController>();
